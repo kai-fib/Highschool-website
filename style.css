@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    background: black;
+    padding: 1rem 8rem;
+}
+.nav-link:hover{
+    background-color: rgb(255, 255, 255);
+    transform: translateY(-15%);
+    border-radius: 20px;
+}
+/*-- fr nav bar links customization --*/
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0 0.8rem;
+    transition: 0.5s;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover,
+#navbarSupportedContent > ul > li:nth-child(n) > a:active
+{
+    color: blueviolet;
+    
+}
+#navbarSupportedContent > button{
+    background: #00bf85;
+    font-weight: 600;
+    padding: 0.09rem 1.4rem;
+    border-radius: 30px;
+}
+.logo{
+    width: 140px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+   
+}
+.banner-text{
+    text-align: center;
+    color: rgb(241, 220, 220);
+    padding-top: 180px;
+}
+.banner-text h1{
+    font-size: 130px;
+    font-style: italic;
+    font-family: 'Stint Ultra Condensed', cursive;
+
+}
+.banner-text p{
+    font-size: 20px;
+    padding-top: 10%;
+    color: rgb(255, 255, 255);
+}
+.banner-btn{
+    margin: 70px auto 0;
+}
+
+.banner-btn a{
+    width: 150px;
+    text-decoration: rgb(0, 0, 0);
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px 0;
+    color: azure;
+    border: .5px solid #fff;
+    transition: color 0.5s;
+}
+.banner-btn a span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    background: rgb(255, 255, 255);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+
+
+#banner{
+    background: url(images/mr-autthaporn-pradidpong-10c8YXMaAEk-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+
+.why .text h6{
+    color: rgb(135, 2, 197);
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.why .text h2{
+    color: rgb(87, 14, 121);
+    font-weight: 700;
+    font-size: 2.7rem;
+    
+}
+.why .text p{
+    color: #f7f5f4;
+    font-weight: 500;
+    font-size: 1.1rem;
+ 
+}
+.why{
+    background: black;
+}
+
+.why .text a{
+    background: #00bf85;
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    border-radius: 30px;
+    color: #111;
+}
+.why .text a:hover{
+    transition: none;
+}
+ .why img{
+    transition: transform 0.5s;
+    border-radius: 20px;
+ }
+ .why img:hover{
+     transform: translateY(-20%);
+ }
+
+  .service{
+      background: #000;
+      
+    }
+
+.service .one{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    border-radius: 7px;
+    transition: transform 0.5s;
+}
+.service .one:hover{
+    transform: translateY(-8%);
+}
+
+
+/*---- Campus ----*/
+.campus{
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 5%;
+    display: flex;
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0%;
+    left: 50%;
+    position: absolute;
+    transform:translateX(-50%) ;
+    transition: 0.5s;
+    opacity: 0;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* ----- facilities ----- */
+.facilities{
+    margin: auto;
+    width: 80%;
+    padding: 90px;
+    text-align: center;
+}    
+
+
+.facilities-col{
+ text-align: left;
+ flex-basis: 31%;
+ position: relative; 
+ border-radius: 10px;
+ margin-bottom: 5%;
+}  
+
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+
+/* testimonial */
+.testimonial{
+    margin:auto ;
+    width: 80%;
+    padding-top: 100px;
+    text-align: center;
+}
+.testimonial-col{
+    flex-basis: 47%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 40px;
+    cursor: pointer;
+    display:inline-flex;
+    
+
+}
+.testimonial-col img{
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-left: 5px;
+}
+
+/*--- footer */
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    padding-top: 50px;
+
+}
+.icons .fa{
+    color: blueviolet;
+    margin: 0;
+    cursor:progress;
+    padding: 18px;
+}
+.fa-heart-o{
+
+    color: orangered;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ------------ About us page -----------------*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/grad.jpg);
+    background-position: center;
+    background-size:cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+   margin-top: 100px;
+   text-align: center;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col img{
+    width: 100%;
+}
+.about-col h1{
+    padding-top: 0%;
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
